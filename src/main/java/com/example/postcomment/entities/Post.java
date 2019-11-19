@@ -16,12 +16,12 @@ public class Post extends AuditModel {
 	@Column(unique = true)
 	private String title;
 
-	@NotNull
+	
 	@Size(max = 250)
 	private String description;
 
-	@NotNull
-	@Lob
+	
+	
 	private String content;
 
 	public Long getId() {
